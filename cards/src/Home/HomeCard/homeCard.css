@@ -1,0 +1,97 @@
+.home-card-container{
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.home-card-container .home-card{
+   position: relative;
+   width: 320px;
+   height: 440px;
+   /* 
+    Key learning point:
+        1- inset is used to create a shadow
+
+        Box-shadows knowledge
+        
+   */
+   box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.home-card-container .home-card .home-card-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow:0 10px 15px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.home-card-container .home-card:hover .home-card-box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.home-card-container .home-card .home-card-box .home-card-content{
+    padding: 20px;
+    text-align: center;
+}
+
+.home-card-container .home-card .home-card-box .home-card-content h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color:rgba(0,0,0,0.02);
+    transition: 0.5s;
+}
+.home-card-container .home-card:hover .home-card-box .home-card-content h2{
+    color: rgba(0,0,0,0.08);
+}
+.home-card-container .home-card .home-card-box .home-card-content h3{
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: .5s;
+}
+.home-card-container .home-card:hover .home-card-box .home-card-content h3,
+.home-card-container .home-card:hover .home-card-box .home-card-content p{
+    color: #fff;
+}
+
+.home-card-container .home-card .home-card-box .home-card-content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: .5s;
+}
+.home-card-container .home-card .home-card-box .home-card-content span{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.home-card-container .home-card:hover .home-card-box .home-card-content span{
+    background: #ff568f;
+}
