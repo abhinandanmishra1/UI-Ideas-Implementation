@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Document</title>
-	</head>
-	<body>
-		<div class="cards">
+import React from 'react'
+import "./card.css";
+import profile from "./profile.jpg";
+const Card = () => {
+  return (
+    <div class="cards">
 			<div class="card">
 				<div class="card-head">
 					<p><span>Article</span> on May 8,2022</p>
@@ -16,7 +11,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -35,7 +30,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -54,7 +49,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -73,7 +68,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -92,7 +87,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -111,7 +106,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -130,7 +125,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -149,7 +144,7 @@
 				</div>
 				<div class="card-author">
 					<a class="author-avatar" href="#">
-						<img src="profile.jpg" />
+						<img alt='' src={profile} />
 					</a>
 					<svg class="half-circle" viewBox="0 0 106 57">
 						<path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
@@ -162,5 +157,7 @@
 				</div>
 			</div>
 		</div>
-	</body>
-</html>
+  )
+}
+
+export default Card
