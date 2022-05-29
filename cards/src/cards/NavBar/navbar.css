@@ -1,0 +1,18 @@
+.navbar{
+    border-bottom: 1px solid #e7e7e7;
+    height: 50px;
+    width: 100%;
+    color: #e7e7e7;
+    padding: 10px;
+    background-color: rgba(196, 190, 190, 0.01);
+}
+
+.home{
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 200;
+}
+
+.home:hover{
+    font-size: 1.2em;
+}

@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #3C3C3C;
+    background-color: rgb(60, 60, 60);
     color: white;
     font-family: 'DM Mono', monospace;
 }

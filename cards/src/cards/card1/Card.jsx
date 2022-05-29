@@ -1,8 +1,11 @@
 import React from 'react'
 import "./card.css";
 import profile from "./profile.jpg";
+import Navbar from '../NavBar/Navbar';
 const Card = () => {
   return (
+	  <>
+	  <Navbar/>
     <div class="cards">
 			<div class="card">
 				<div class="card-head">
@@ -157,6 +160,7 @@ const Card = () => {
 				</div>
 			</div>
 		</div>
+		</>
   )
 }
 
